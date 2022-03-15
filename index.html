@@ -63,9 +63,9 @@ font-family: Helvetica
     <br> <br>
     <p1><em>nasa ISS live feed below!!!!</em></p1>
     <br>
-  </center>
+ </body> 
+    </center>
     </head>
-</body>
     <script>
 let colour="random"; // "random" can be replaced with any valid colour ie: "red"...
 let sparkles=100;// increase of decrease for number of sparkles falling
@@ -98,20 +98,20 @@ s=(ns)?'':'.style';
 
 if (ns){
 	for (i = 0; i < n; i++)
-		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+innerHTML('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
 }
 
 if (ie)
-	document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+	innerHTML('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
 
 if (ie||n6){
 	for (i = 0; i < n; i++)
-		document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
 }
 
 if (ie)
-	document.write('</div></div>');
-(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+	element.setHTML('</div></div>');
+(ns||n6)? window.captureEvents(Event.MOUSEMOVE):0;
 
 function Mouse(evnt){
 
@@ -129,7 +129,7 @@ function animate(){
 
 	for (i = 0; i < n; i++){
 
-		var temp1 = eval(d+a+"dots"+i+n6r+s);
+		let temp1 = eval(d+a+"dots"+i+n6r+s);
 
 		randcolours = colours[Math.floor(Math.random()*colours.length)];
 
@@ -137,7 +137,7 @@ function animate(){
 
 		if (i < n-1){
 
-			var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+			let temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
 			temp1.top = parseInt(temp2.top) + 'px';
 			temp1.left = parseInt(temp2.left) + 'px';
 
