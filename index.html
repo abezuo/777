@@ -1,3 +1,6 @@
+<html>
+  
+</html>
 <body>
   <head>
     <meta charset="utf-8">
@@ -31,15 +34,18 @@
   font-family: mixo;
   src: url(vtf_mixo-webfont.woff);
 }
-/* TEXT */ 
+/* TEXT */     
+        
         a {
           font-family: mpix;
           font-size: 20
         } 
 a:link {
-  color: green;
+  color: #39FF14;
   background-color: transparent;
   text-decoration: none;
+  display: block;
+  padding: 12px 16px;
 
 }
 
@@ -60,7 +66,7 @@ body {
       background-size: cover;
         }
 h1 {
-color: lime;
+color: #32CD32;
 font-family: mpixtool;
 font-size: 100;
 margin: 10px 5px 10px 5px; 
@@ -90,11 +96,13 @@ font-size: 20
 .lhover {
 cursor: url(http://www.rw-designer.com/cursor-view/91846.png), default 
         }
+        
+        
 </style>
   <a href="https://cdc.gov">
   <img src="https://64.media.tumblr.com/dd86ec051142eb2115b87417d43424cc/tumblr_p7pgr1DteG1vpf6ddo1_400.gifv" alt="spinning earth" class="lhover">
   </a>
-  <br>
+  <br><br><br>
    <a href="https://help.flourish.studio/article/288-how-to-use-custom-html-and-css#useful-css-properties" target="_blank"><span class="lhover"> cool</span></a>
     <br>
     <p2> (psst click on the earf) </p2>
@@ -104,10 +112,11 @@ cursor: url(http://www.rw-designer.com/cursor-view/91846.png), default
   <br>
   <p2> <b> website </b> </p2> <p1> for my arts n stuff</p1>
   <br> <br>
-  <img src="https://web.archive.org/web/20090806130823if_/http://www.geocities.com/blueboard_99/links.gif" alt="links"width="650" height="45"> 
+  <img src="https://web.archive.org/web/20090806130823if_/http://www.geocities.com/blueboard_99/links.gif" alt="links"width="650" height="45">
+  <br> <br>
+   <a href="https://help.flourish.studio/article/288-how-to-use-custom-html-and-css#useful-css-properties" target="_blank"><span class="hovering"> why is my cursor not clicjing on this wgat gte fcuk </span></a>
   <br> <br>
     <br>
- </body> 
     </center>
     </head>
     <script>
@@ -211,7 +220,7 @@ window.onload=function() { if (document.getElementById) {
 		rats.style.backgroundColor="transparent";
 		rats.style.visibility="hidden";
 		rats.style.zIndex="999";
-		var rlef=createDiv(1, 5);
+		let rlef=createDiv(1, 5);
 		var rdow=createDiv(5, 1);
 		rats.appendChild(rlef);
 		rats.appendChild(rdow);
@@ -226,7 +235,7 @@ window.onload=function() { if (document.getElementById) {
 }}
 
 function sparkle() {
-	var c;
+	let c;
 	if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
 		ox=x;
 		oy=y;
@@ -330,13 +339,13 @@ function set_scroll() {
 
 window.onresize=set_width;
 function set_width() {
-	var sw_min=999999;
-	var sh_min=999999;
+	let sw_min=999999;
+	let sh_min=999999;
 	if (document.documentElement && document.documentElement.clientWidth) {
 		if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
 		if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
 	}
-	if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+	if (typeof(self.innerWidth)==='number' && self.innerWidth) {
 		if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
 		if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
 	}
@@ -353,7 +362,7 @@ function set_width() {
 }
 
 function createDiv(height, width) {
-	var div=document.createElement("div");
+	let div=document.createElement("div");
 	div.style.position="absolute";
 	div.style.height=height+"px";
 	div.style.width=width+"px";
@@ -370,5 +379,5 @@ function newColour() {
 	return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
 // ]]>
-
-</script>    
+    </script> 
+</body>    
